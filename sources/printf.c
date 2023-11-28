@@ -6,14 +6,13 @@
 /*   By: cagarci2 <cagarci2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by cagarci2          #+#    #+#             */
-/*   Updated: 2023/11/28 12:09:42 by cagarci2         ###   ########.fr       */
+/*   Updated: 2023/11/28 12:17:15 by cagarci2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../library/printf.h"
-#include "../library/libft.h"
 
-int	print_format(char simbol, va_list list)
+int	print_format(char simbol, va_list ap)
 {
 	int	count;
 
@@ -23,7 +22,7 @@ int	print_format(char simbol, va_list list)
 	else if (simbol == 's')
 		count += ft_putstr(va_arg(ap, char *));
 	else if (simbol == 'p')
-		count += ft_putvoid(va_arg(ap, *void));
+		count += ft_putvoid(va_arg(ap, void *));
 	else if (simbol == 'd' || simbol == 'i')
 		count += ft_putdigit(va_arg(ap, int), 10);
 	else if (simbol == 'u')
