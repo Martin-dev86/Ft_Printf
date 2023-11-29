@@ -6,7 +6,7 @@
 /*   By: cagarci2 <cagarci2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:03:38 by cagarci2          #+#    #+#             */
-/*   Updated: 2023/11/28 12:13:32 by cagarci2         ###   ########.fr       */
+/*   Updated: 2023/11/29 13:01:15 by cagarci2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,9 @@
 # include <stdlib.h>
 # include <stdarg.h>
 
-int	printf(const char *format, ...);
+int	ft_printf(const char *format, ...);
+int	ft_putchar(char c);
+int	ft_putstr(char *str);
+int	ft_putdigit(int num);
+
 #endif

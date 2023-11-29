@@ -12,7 +12,7 @@
 
 NAME = libft.a
 
-SOURCES = "../s"
+SOURCES = "/sources/"
 
 OBJ = $(SOURCES:.c=.o)
 CC = gcc
